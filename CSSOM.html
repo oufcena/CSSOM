@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>CSSOM</h1>
+
+<script>
+var JSX, CSSOM;
+JSX = document.body;
+CSSOM = getComputedStyle(JSX);
+
+JSX.innerHTML += [...CSSOM].map((v,i) => {
+  var length, favor
+  length = CSSOM.length-1;
+  favor = `${i+1}- ${v}: ${CSSOM[v]}`;
+  
+  if(i<length) { return favor + ', '; }
+  else { return favor; }
+}).join('<br>');
+</script>
+
+</body>
+</html>
+
+
