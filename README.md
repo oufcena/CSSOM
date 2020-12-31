@@ -1,3 +1,3 @@
 # CSSOM
 
-[Preview](https://oufcena.github.io/CSSOM/CSSOM.html)
+[Preview](https://oufcena.github.io/CSSOM/)
